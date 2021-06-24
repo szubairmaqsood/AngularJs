@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Following is the link of CDN for Angular
+    -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+    <!--
+        ng-app is used to indicate which portion of app we will use angular
+        ng-model indicates that there is a application varaible in which value of control will be saved
+        ng-bind indicates that a value of particular application varaible will be shown in html view
+    -->
+
+    <div ng-app="">
+        <p>Name : <input type="text" ng-model="name"></p>
+        <p ng-bind="name"></p>
+    </div>
+
+</body>
+
+</html>
