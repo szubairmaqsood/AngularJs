@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="Country='Pakistan';FatherName={FirstName:'Maqsood',LastName:' ul Hasan'};Gpa=[3,3.5,3.6]">
+  <p >You are currently in <span ng-bind="Country"></span></p>
+  <p>Your First Name is <input type="text" ng-model="FirstName"/></p>
+  <p>Your Second Name is <input type="text" ng-model="SecondName"/></p>
+  <p>What was your age 10 Year Ago <input type="number" ng-model="AgeTenYearsAgo"/></p>
+  <p>Your full name is  {{FirstName +  " " + SecondName}}</p>
+  <p>Your Father Name is {{FatherName.FirstName + FatherName.LastName}}</p>
+
+  <p>Your age is {{AgeTenYearsAgo + 10}}</p>
+  <p>Your gpa in last Semester was {{Gpa[2]}}</p>
+</div>
+
+</body>
+</html>
