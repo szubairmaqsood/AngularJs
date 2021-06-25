@@ -3,7 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="" ng-init="Country='Pakistan';FatherName={FirstName:'Maqsood',LastName:' ul Hasan'};Gpa=[3,3.5,3.6]">
+<div ng-app="" ng-init="Country='Pakistan';FatherName={FirstName:'Maqsood',LastName:' ul Hasan'};Gpa=[3.0,3.5,3.6]">
   <p >You are currently in <span ng-bind="Country"></span></p>
   <p>Your First Name is <input type="text" ng-model="FirstName"/></p>
   <p>Your Second Name is <input type="text" ng-model="SecondName"/></p>
@@ -13,6 +13,7 @@
 
   <p>Your age is {{AgeTenYearsAgo + 10}}</p>
   <p>Your gpa in last Semester was {{Gpa[2]}}</p>
+  <p>Your average gpa in last three semester was <span ng-bind="((Gpa[0]+Gpa[1]+Gpa[2])/3)"></span></p>
 </div>
 
 </body>
